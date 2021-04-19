@@ -1,0 +1,25 @@
+.topbar
+    .sidebar_btn.sidebar_btn_mini
+        i class="fa fa-bars" aria-hidden="true"
+    .sologan
+        h1 STUDY WITH MR.KEN
+        h4 Luôn luôn lắng nghe,lâu lâu mới hiểu !!!
+    .img_profile_top
+        .profile_conten
+            =  image_tag("3.jpg",class:"img_top")
+            h4 
+                | Don't look at me
+        .menu_profile
+            = link_to "#" do
+                i class="fa fa-bell-o" aria-hidden="true"
+                | Notifications
+            = link_to "#" do
+                i class="fa fa-volume-control-phone" aria-hidden="true"
+                | Suppost
+            = link_to "#" do
+                i class="fa fa-cog" aria-hidden="true"
+                | Settings
+            = link_to destroy_manager_session_path,method: :delete do
+                i class="fa fa-sign-out" aria-hidden="true"
+                | LogOut
+        

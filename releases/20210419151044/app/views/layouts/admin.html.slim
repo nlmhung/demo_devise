@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta content=("IE=edge") http-equiv="X-UA-Compatible" /
+    meta content=("width=device-width, initial-scale=1") name="viewport" /
+    meta content=("") name="description" /
+    meta content=("") name="keywords" /
+    title AnnaSpeak Admin Panel
+    = csrf_meta_tags
+    = csp_meta_tag
+    link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" /
+    = stylesheet_link_tag 'admin', media: 'all'
+  body
+    .wrapper
+      .sidebar-wrapper 
+        =render 'layouts/admin/admin_sidebar'
+      .content-wrapper
+        =render 'layouts/admin/admin_header'
+        .content-page 
+          .content
+            .container-fluid
+              = yield
+              
+                
+      =render 'layouts/admin/admin_footer'

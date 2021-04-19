@@ -1,0 +1,21 @@
+/! ========== Left Sidebar Start ==========
+.left.side-menu
+    
+    
+    .sidebar-menu
+      
+      ul
+        li
+          = link_to admin_root_path, class: 'waves-effect' do
+            i.fa.fa-desktop
+            | All
+        li
+          = link_to admin_managers_path, class: 'waves-effect' do
+            i class="fa fa-tasks" aria-hidden="true"
+            | New Movies
+        
+        li
+          = link_to admin_root_path, class: 'waves-effect' do
+            i.fa.fa-desktop
+            | Hot Movies
+        

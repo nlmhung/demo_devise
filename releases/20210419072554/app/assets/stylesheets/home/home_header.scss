@@ -1,0 +1,23 @@
+.topbar {
+    background-color: #22242A;
+    color: #fff;
+    text-align: center;
+    
+    a {
+        color:#fff;
+    }
+    h1 {
+        font-size: 40px;
+        padding-top: 15px;
+        color: #DAF7A6 ;
+    }
+    h4 {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .sidebar_btn {
+        position: fixed;
+        left: 280px;
+        top: 40px;
+    }
+}
