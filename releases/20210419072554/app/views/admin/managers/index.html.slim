@@ -1,0 +1,11 @@
+h1 List Admin
+table
+  thead
+    tr
+      th ID
+      th Email
+  tbody
+    - @managers.each do |manager|
+      tr
+        td= manager.id
+        td= manager.email

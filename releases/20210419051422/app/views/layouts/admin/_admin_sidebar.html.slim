@@ -1,0 +1,40 @@
+/! ========== Left Sidebar Start ==========
+.left.side-menu
+    
+    
+    .sidebar-menu
+      .img_profile_wrap
+        =  image_tag("2.jpg", class:'img_profile')
+      h4 
+        span.menu_text Don't look at me
+      ul
+        li
+          = link_to admin_root_path, class: 'icon_sidebar' do
+            i.fa.fa-desktop
+            span.menu_text Dashboard
+        li
+          = link_to admin_managers_path, class: 'icon_sidebar' do
+            i class="fa fa-tasks" aria-hidden="true"
+            span.menu_text Managers
+        li
+          = link_to admin_movies_path, class: 'icon_sidebar' do
+            i class="fa fa-upload" aria-hidden="true"
+            span.menu_text Upload Movie
+        li
+          = link_to admin_genres_path, class: 'icon_sidebar' do
+            i class="fa fa-table" aria-hidden="true"
+            span.menu_text Genres Movie
+        li
+          = link_to admin_root_path, class: 'icon_sidebar' do
+            i class="fa fa-font-awesome" aria-hidden="true"
+            span.menu_text Forms
+        li
+          = link_to admin_root_path, class: 'icon_sidebar' do
+            i class="fa fa-user-circle-o" aria-hidden="true"
+            span.menu_text About
+
+        li
+          = link_to admin_root_path, class: 'icon_sidebar' do
+            i class="fa fa-cogs" aria-hidden="true"
+            span.menu_text Setting
+        

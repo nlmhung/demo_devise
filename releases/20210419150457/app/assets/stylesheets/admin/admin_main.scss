@@ -1,0 +1,50 @@
+.wrapper {
+    position: relative;
+    .sidebar-wrapper {
+        position: fixed;
+        width: 220px;
+        left: 0;
+        top: 0;
+    }
+    .content-wrapper {
+        width: calc(100% - 220px);
+        margin-left: 220px;
+        
+    }
+
+    &.have_sidebar_mini {
+        .sidebar-wrapper {
+        position: fixed;
+        width: 70px;
+        left: 0;
+        top: 0;
+            
+            i{
+                padding: 0;
+                font-size: 25px;
+            }
+        }
+        .content-wrapper {
+        width: calc(100% - 70px);
+        margin-left: 70px;
+        }
+        
+        
+        .menu_text {
+            display: none;
+        }
+        .img_profile_wrap{
+            display: none;
+        }
+        .img_profile_top{
+            display: inline-block;
+            
+           .img_top{
+               width: 80px;
+               height: 80px;
+               border-radius: 50%;
+           }
+        
+    }
+    }
+}
